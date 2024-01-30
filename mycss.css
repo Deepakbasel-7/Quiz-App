@@ -1,0 +1,76 @@
+/* Dark Theme CSS for Admin Login Page */
+
+body {
+    background-color: #282c34;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #353b45;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #61dafb;
+}
+
+.input-field {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #61dafb;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #61dafb;
+    background-color: transparent;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a8bbb;
+}
+
+.extra {
+    margin-top: 10px;
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
