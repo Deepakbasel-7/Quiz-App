@@ -43,7 +43,7 @@
 <?php
 include("conn.php");
 
-include_once('function.inc.php');
+
 
 if (isset($_POST['sub'])) {
   $msg = array();

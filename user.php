@@ -50,7 +50,7 @@ h1{
 
 <?php
 session_start();
-// echo $_SESSION['fname'];
+
 if( isset( $_SESSION['fname'] ) ) {
 
 
