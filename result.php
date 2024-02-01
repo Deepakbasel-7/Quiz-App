@@ -123,11 +123,17 @@ body{
 
 
 <body>
+  <?php
+  session_start();
+  // echo $_SESSION['fname'];
+  if( isset( $_SESSION['fname'] ) ) {
+
+    ?>
   <header class="d-flex justify-content-between my-4">
 
 
     <div class="text-center">
-      <a href="login.php" class="btn btn-danger">
+      <a href="logout.php" class="btn btn-danger">
         <i class="fas fa-sign-out-alt"></i> Log out
       </a>
     </div>
@@ -199,5 +205,9 @@ body{
     </div>
 </div>
 
+<?php } else {
+  header('Location: login.php');
+}
+?>
 </body>
 </html>

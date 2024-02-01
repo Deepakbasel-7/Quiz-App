@@ -15,7 +15,7 @@
         <div class="form-container">
 
           <h2 class="opacity">LOGIN</h2>
-          <form method="POST" action="user.php">
+          <form method="POST" action="login_check.php">
             <input type="text" name="fname" placeholder="USERNAME" />
             <input type="password" name="pass" placeholder="PASSWORD" />
             <button class="opacity" name="sub">SUBMIT</button>

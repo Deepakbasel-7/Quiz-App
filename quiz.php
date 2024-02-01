@@ -44,6 +44,12 @@
     };
   </script>
 <body class="bg-dark text-light">
+  <?php
+session_start();
+// echo $_SESSION['fname'];
+if( isset( $_SESSION['fname'] ) ) {
+
+  ?>
 <div class="text-center">
   <b id="answerNow" class="golden">Answer Now!!</b><br>
   <b id="timeRemaining" class="golden">Time Remaining: </b><span id="timer" class="golden">1m 0s</span><br>
@@ -51,7 +57,7 @@
 <nav class="navbar navbar-dark bg-dark">
   <a href="user.php" class="btn btn-secondary mr-auto">Back</a>
   <!-- <span class="navbar-brand mb-0 h1" id="quizApp" class="blink">Quiz App</span> -->
-  <a href="login.php" class="btn btn-danger ml-auto">Logout</a>
+ 
 </nav>
 
 <div class="container mt-4">
@@ -114,6 +120,11 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<?php } else {
+  header('Location: login.php');
+}
+?>
 </body>
+
+
 </html>
