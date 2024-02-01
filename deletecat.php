@@ -21,7 +21,7 @@ $id = $_GET['id'];
         header('Location: http://localhost/project/categories.php');
     } else {
         ?>
-        <script>alert('Adding Unsuccessfull!!');</script>
+        <script>alert('Delete Unsuccessfull!!');</script>
         <?php
     }
 
